@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Get in Touch · MentorTech A.C.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span class="logo-mark">MT</span><span class="logo-word">MentorTech</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="mision.html">Mission &amp; Vision</a></li>
+      <li><a href="nosotros.html">About Us</a></li>
+      <li><a href="contacto.html" class="active">Get in Touch</a></li>
+      <li><a href="noticias.html">News</a></li>
+      <li><a href="oportunidades.html" class="nav-cta">Current Opportunities</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="label reveal">Get in Touch</div>
+    <h1 class="display-md reveal" style="margin-top:1rem;margin-bottom:1.5rem">
+      Hablemos.<br>Te esperamos <span class="accent">aquí</span>.
+    </h1>
+    <p class="body-lg reveal">Hey, we look forward to hearing from you!</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,6rem)">
+
+      <!-- FORM -->
+      <div>
+        <div class="label reveal" style="margin-bottom:1.5rem">Escríbenos</div>
+        <form class="form-grid reveal" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="form-row">
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required/>
+            </div>
+            <div class="field">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required/>
+            </div>
+          </div>
+          <div class="field">
+            <label for="tipo">¿Cómo te describes?</label>
+            <select id="tipo" name="tipo">
+              <option value="">Selecciona una opción</option>
+              <option value="estudiante">Estudiante universitario/a</option>
+              <option value="profesionista">Profesionista</option>
+              <option value="empresa">Empresa / Aliado potencial</option>
+              <option value="donador">Donador / Apoyo financiero</option>
+              <option value="mentor">Quiero ser mentor/a</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" placeholder="¿En qué te puedo ayudar?"/>
+          </div>
+          <div class="field">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos lo que tienes en mente. Te respondemos :)" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold btn-lg" style="align-self:flex-start;margin-top:.5rem">
+            Enviar mensaje
+          </button>
+          <p id="form-status" style="font-size:.82rem;color:var(--gold);display:none;margin-top:.5rem">¡Mensaje enviado! Te respondemos pronto.</p>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div data-stagger>
+        <div class="label reveal" style="margin-bottom:1.5rem">Contacto directo</div>
+
+        <div class="card reveal" style="margin-bottom:1.2rem;padding:2rem">
+          <div class="label" style="margin-bottom:.6rem">Fundadores</div>
+          <div style="display:flex;flex-direction:column;gap:.5rem;margin-top:.5rem">
+            <a href="mailto:felipe_garcia@mentortech.org" style="font-size:.88rem;color:var(--muted2);transition:color .2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--muted2)'">felipe_garcia@mentortech.org</a>
+            <a href="mailto:jon_reyes@mentortech.org" style="font-size:.88rem;color:var(--muted2);transition:color .2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--muted2)'">jon_reyes@mentortech.org</a>
+            <a href="mailto:jesus.molinardiaz@mentortech.org" style="font-size:.88rem;color:var(--muted2);transition:color .2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--muted2)'">jesus.molinardiaz@mentortech.org</a>
+            <a href="mailto:sara.zi.wang@mentortech.org" style="font-size:.88rem;color:var(--muted2);transition:color .2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--muted2)'">sara.zi.wang@mentortech.org</a>
+            <a href="mailto:m_zamudiot@mentortech.org" style="font-size:.88rem;color:var(--muted2);transition:color .2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--muted2)'">m_zamudiot@mentortech.org</a>
+          </div>
+        </div>
+
+        <div class="card reveal" style="margin-bottom:1.2rem;padding:2rem">
+          <div class="label" style="margin-bottom:.6rem">Sitio web</div>
+          <a href="https://mentortech.org" target="_blank" style="font-size:.95rem;color:var(--gold);font-weight:600">mentortech.org →</a>
+        </div>
+
+        <div class="card reveal" style="margin-bottom:1.2rem;padding:2rem">
+          <div class="label" style="margin-bottom:.6rem">Ubicación</div>
+          <p style="font-size:.88rem;color:var(--muted2);line-height:1.65">Ciudad Juárez, Chihuahua<br>México</p>
+        </div>
+
+        <div class="card reveal" style="padding:2rem">
+          <div class="label" style="margin-bottom:.8rem">¿Interesado en hacer tu Servicio Social?</div>
+          <p style="font-size:.88rem;color:var(--muted2);line-height:1.65;margin-bottom:1.2rem">El Proyecto Nexus integra estudiantes de marketing, IA, diseño, derecho y más. Servicio Social semipresencial/remoto.</p>
+          <a href="oportunidades.html" class="link-arr">Ver oportunidades →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><span class="logo-mark">MT</span><div class="footer-brand-text"><strong>MentorTech A.C.</strong><small>Ciudad Juárez, Chihuahua · México</small></div></div>
+      <nav class="footer-nav"><a href="../index.html">Home</a><a href="mision.html">Mission &amp; Vision</a><a href="nosotros.html">About Us</a><a href="contacto.html">Get in Touch</a><a href="noticias.html">News</a><a href="oportunidades.html">Current Opportunities</a></nav>
+      <div class="footer-contact"><a href="https://mentortech.org" target="_blank">mentortech.org</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 MentorTech A.C. · CLUNI Federal</span><span>Empowering Talents, Transforming Futures</span></div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  const form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      const status = document.getElementById('form-status');
+      btn.textContent = 'Enviando…';
+      btn.disabled = true;
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.reset();
+          status.style.display = 'block';
+          btn.textContent = '¡Enviado!';
+        } else {
+          btn.textContent = 'Enviar mensaje';
+          btn.disabled = false;
+          alert('Hubo un error. Por favor escríbenos directamente a felipe_garcia@mentortech.org');
+        }
+      } catch {
+        btn.textContent = 'Enviar mensaje';
+        btn.disabled = false;
+      }
+    });
+  }
+</script>
+</body>
+</html>

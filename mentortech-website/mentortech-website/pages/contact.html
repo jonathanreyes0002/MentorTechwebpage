@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Get in Touch · MentorTech A.C.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><span class="logo-mark">MT</span><span class="logo-text">MentorTech</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="mission.html">Mission &amp; Vision</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" class="active">Get in Touch</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="opportunities.html" class="nav-cta">Current Opportunities</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="container">
+    <span class="section-label reveal">Contacto</span>
+    <h1 class="reveal">Get in<br><span class="accent">Touch</span></h1>
+    <p class="reveal">Hey, we look forward to hearing from you! Ya seas estudiante, empresa aliada, mentor potencial o donador, queremos saber de ti.</p>
+  </div>
+</section>
+
+<!-- CONTACT FORM + INFO -->
+<section class="section dark-bg">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- FORM -->
+      <div>
+        <span class="section-label reveal">Escríbenos</span>
+        <h2 class="section-title reveal" style="font-size:clamp(1.6rem,3vw,2.4rem)">Cuéntanos<br><em>qué tienes en mente</em>.</h2>
+        <form class="contact-form reveal" id="contactForm" style="margin-top:2rem">
+          <div class="field">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+          </div>
+          <div class="field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+          </div>
+          <div class="field">
+            <label for="role">Soy…</label>
+            <select id="role" name="role">
+              <option value="">Selecciona una opción</option>
+              <option>Estudiante universitario</option>
+              <option>Egresado / Profesional</option>
+              <option>Empresa / Aliado corporativo</option>
+              <option>Mentor potencial</option>
+              <option>Donador / Filántropo</option>
+              <option>Medios / Prensa</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">¿Qué tienes en mente? We will get back to you :)</label>
+            <textarea id="message" name="message" placeholder="Cuéntanos más sobre tu interés en MentorTech…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center">Enviar mensaje</button>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="contact-info reveal">
+        <div class="ci-block">
+          <h4>Organización</h4>
+          <p>MentorTech A.C.<br>Asociación Civil con CLUNI Federal<br>Ciudad Juárez, Chihuahua, México</p>
+        </div>
+        <div class="ci-block">
+          <h4>Equipo fundador</h4>
+          <p>
+            <a href="mailto:felipe_garcia@mentortech.org">felipe_garcia@mentortech.org</a><br>
+            <a href="mailto:jon_reyes@mentortech.org">jon_reyes@mentortech.org</a><br>
+            <a href="mailto:jesus.molinardiaz@mentortech.org">jesus.molinardiaz@mentortech.org</a><br>
+            <a href="mailto:sara.zi.wang@mentortech.org">sara.zi.wang@mentortech.org</a><br>
+            <a href="mailto:m_zamudiot@mentortech.org">m_zamudiot@mentortech.org</a>
+          </p>
+        </div>
+        <div class="ci-block">
+          <h4>Web</h4>
+          <p><a href="https://mentortech.org" target="_blank" rel="noopener">mentortech.org</a></p>
+        </div>
+        <div class="ci-block">
+          <h4>Redes sociales</h4>
+          <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+          </div>
+        </div>
+
+        <!-- Service Social CTA -->
+        <div style="background:var(--dark);border:1px solid var(--border);border-radius:6px;padding:1.8rem;margin-top:1rem">
+          <span class="section-label">UACJ · Servicio Social</span>
+          <h3 style="font-size:1.1rem;margin-bottom:.6rem">¿Te interesa realizar tu trabajo social con nosotros?</h3>
+          <p style="font-size:.87rem;color:var(--white-dim);line-height:1.65;margin-bottom:1.2rem">Únete al Proyecto Nexus. Aplica tus habilidades en IA, marketing, diseño, derecho o psicología en un proyecto real de impacto social.</p>
+          <a href="opportunities.html" class="btn btn-gold" style="width:100%;justify-content:center">Regístrate ahora →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><span class="logo-mark">MT</span><div><strong>MentorTech A.C.</strong><small>Ciudad Juárez, Chihuahua · México</small></div></div>
+      <nav class="footer-nav"><a href="../index.html">Home</a><a href="mission.html">Mission &amp; Vision</a><a href="about.html">About Us</a><a href="contact.html">Get in Touch</a><a href="news.html">News</a><a href="opportunities.html">Current Opportunities</a></nav>
+      <div class="footer-right"><a href="https://mentortech.org" target="_blank" rel="noopener">mentortech.org</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 MentorTech A.C. · CLUNI Federal</span><span>Empowering Talents, Transforming Futures</span></div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
